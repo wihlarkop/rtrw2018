@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    List KK
+{% endblock page_title %}
+
+{% block contents %}
+    <div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table align="center" class="table mt-2">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="align-middle">Nomor</th>
+                    <th scope="col" class="align-middle">Nomor KK</th>
+                    <th scope="col" class="align-middle">Kepala Keluarga</th>
+                    <th scope="col" class="align-middle">Alamat</th>
+                    <th><a class="btn btn-outline-primary align-right" href="{% url 'warga:create_kk' %}" title="">Tambah</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for kk in kk_list %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{ kk.nomor_kk }}</a></td>
+                        <td>{{ kk.nik }}</td>
+                        <td>{{ kk.alamat }}</td>
+                        <td><a class="btn btn-outline-warning" href="" title="">Update</a>
+                            <a class="btn btn-outline-danger" href="" title="">Delete</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock contents %}
+
+<!--<a href="{% url 'warga:detail_kk' kk.pk %}">-->

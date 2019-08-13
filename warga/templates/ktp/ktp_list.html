@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    List KTP
+{% endblock page_title %}
+
+{% block contents %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table align="center" class="table mt-2">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="align-middle">Nomor</th>
+                    <th scope="col" class="align-middle">NIK</th>
+                    <th scope="col" class="align-middle">Nama</th>
+                    <th><a class="btn btn-outline-primary align-right" href="{% url 'warga:create_ktp' %}" title="">Tambah</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for ktp in ktp_list %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td><a href="{% url 'warga:detail_ktp' ktp.pk %}">{{ ktp.nik }}</a></td>
+                        <td>{{ktp.nama}}</td>
+                        <td><a class="btn btn-outline-warning" href="{% url 'warga:update_ktp' ktp.id %}" title="">Update</a>
+                            <a class="btn btn-outline-danger" href="{% url 'warga:delete_ktp' ktp.id %}" title="">Delete</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock contents %}
