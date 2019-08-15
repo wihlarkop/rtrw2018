@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+	{% include "snippets/styles.html" %}
+</head>
+<body>
+
+	<p>Apakah anda yakin akan logout?</p>
+
+	<form method="POST">
+		{% csrf_token %}
+		<input type="submit" name="logout" placeholder="Keluar">
+	</form>
+</body>
+</html>

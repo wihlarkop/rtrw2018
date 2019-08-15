@@ -5,6 +5,14 @@
 {% endblock page_title %}
 
 {% block contents %}
+<div class="row">
+    <div class="col-md-12">
+        <form action="{% url 'warga:list_kk' %}" method="get">
+            <input class="form-control" name="k" type="text" placeholder="Search...">
+        </form>
+    </div>
+</div>
+
     <div class="row">
     <div class="col-md-12">
         <div class="table-responsive">
@@ -15,6 +23,8 @@
                     <th scope="col" class="align-middle">Nomor KK</th>
                     <th scope="col" class="align-middle">Kepala Keluarga</th>
                     <th scope="col" class="align-middle">Alamat</th>
+                    <th scope="col" class="align-middle">RT</th>
+                    <th scope="col" class="align-middle">RW</th>
                     <th><a class="btn btn-outline-primary align-right" href="{% url 'warga:create_kk' %}" title="">Tambah</a></th>
                 </tr>
                 </thead>
@@ -25,8 +35,10 @@
                         <td>{{ kk.nomor_kk }}</a></td>
                         <td>{{ kk.nik }}</td>
                         <td>{{ kk.alamat }}</td>
-                        <td><a class="btn btn-outline-warning" href="" title="">Update</a>
-                            <a class="btn btn-outline-danger" href="" title="">Delete</a></td>
+                        <td>{{ kk.rt }}</td>
+                        <td>{{ kk.rw }}</td>
+                        <td><a class="btn btn-outline-warning" href="{% url 'warga:update_kk' kk.id %}" title="">Update</a>
+                            <a class="btn btn-outline-danger" href="{% url 'warga:delete_kk' kk.id %}" title="">Delete</a></td>
                     </tr>
                 {% endfor %}
                 </tbody>

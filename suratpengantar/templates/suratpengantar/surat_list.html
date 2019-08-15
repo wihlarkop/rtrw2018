@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    List Request Surat Pengantar
+{% endblock page_title %}
+
+{% block contents %}
+    <div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table align="center" class="table mt-2">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="align-middle">NIK</th>
+                    <th scope="col" class="align-middle">Tujuan Surat</th>
+                    <th scope="col" class="align-middle">Atas Nama</th>
+                    <th scope="col" class="align-middle">Status</th>
+                    <th><a class="btn btn-outline-primary align-right" href="{% url 'suratpengantar:create_surat' %}" title="">Tambah</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for surat in surat_list %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{ surat.nik }}</a></td>
+                        <td>{{ surat.tujuan_surat }}</td>
+                        <td>{{ surat.atas_nama }}</td>
+                        <td>{{ surat.is_ready }}</td>
+                        <td><a class="btn btn-outline-warning" href="{% url 'suratpengantar:update_surat' suratpengantar.id %}" title="">Update</a>
+                            <a class="btn btn-outline-danger" href="{% url 'suratpengantar:delete_surat' suratpengantar.id %}" title="">Delete</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock contents %}

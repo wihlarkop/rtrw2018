@@ -64,7 +64,7 @@ class Ktp(models.Model):
     masa_berlaku = models.CharField(max_length=15, default="Seumur Hidup", editable=False)
 
     def __str__(self):
-        return '{}'.format(self.nik)
+        return '{} {}'.format(self.nik, self.nama)
 
 
 class Kk(models.Model):
@@ -87,8 +87,9 @@ class Kk(models.Model):
     rw = models.CharField(max_length=7, default="RW 016")
     is_kepala_keluarga = models.BooleanField(default=True)
 
+
     def __str__(self):
-        return '{}'.format(self.nomor_kk)
+        return '{}, {}'.format(self.nomor_kk, self.nik.nama)
 
 
 class Ktpkk(models.Model):

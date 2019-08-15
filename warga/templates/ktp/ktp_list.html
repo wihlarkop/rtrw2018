@@ -5,6 +5,13 @@
 {% endblock page_title %}
 
 {% block contents %}
+<div class="row">
+    <div class="col-md-12">
+        <form action="{% url 'warga:list_ktp' %}" method="get">
+            <input class="form-control" name="q" type="text" placeholder="Search...">
+        </form>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-12">
@@ -15,6 +22,8 @@
                     <th scope="col" class="align-middle">Nomor</th>
                     <th scope="col" class="align-middle">NIK</th>
                     <th scope="col" class="align-middle">Nama</th>
+                    <th scope="col" class="align-middle">RT</th>
+                    <th scope="col" class="align-middle">RW</th>
                     <th><a class="btn btn-outline-primary align-right" href="{% url 'warga:create_ktp' %}" title="">Tambah</a></th>
                 </tr>
                 </thead>
@@ -24,6 +33,8 @@
                         <th scope="row">{{forloop.counter}}</th>
                         <td><a href="{% url 'warga:detail_ktp' ktp.pk %}">{{ ktp.nik }}</a></td>
                         <td>{{ktp.nama}}</td>
+                        <td>{{ktp.rt}}</td>
+                        <td>{{ktp.rw}}</td>
                         <td><a class="btn btn-outline-warning" href="{% url 'warga:update_ktp' ktp.id %}" title="">Update</a>
                             <a class="btn btn-outline-danger" href="{% url 'warga:delete_ktp' ktp.id %}" title="">Delete</a></td>
                     </tr>

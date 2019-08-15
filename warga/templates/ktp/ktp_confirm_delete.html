@@ -13,17 +13,16 @@
               <div class="row">
                   <div class="col-md-4">
                       <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-header">{{ object.nik }}</div>
+                        <div class="card-header">NIK: {{ object.nik }}</div>
                           <div class="card-body">
-                              <h5 class="card-title">{{ object.nama }}</h5>
-                              <p class="card-text">{{ object.tempat_lahir }}, {{ object.tanggal_lahir }}</p>
-                              <p class="card-text">{{ object.jenis_kelamin }} {{ object.golongan_darah }}</p>
-                              <p class="card-text">{{ object.alamat }} {{ object.rt }} {{ object.rw }} {{ object.kecamatan }}</p>
-                              <p class="card-text">{{ object.agama }} {{ object.status_perkawinan }}</p>
-                              <p class="card-text">{{ object.pekerjaan }} {{ object.kewarganegaraan }}</p>
-                              <p class="card-text">{{ object.masa_berlaku }}</p>
+                            <h5 class="card-title">Nama: {{ object.nama }}</h5>
+                            <p class="card-text">Tempat dan Tanggal Lahir: {{ object.tempat_lahir }}, {{ object.tanggal_lahir }}</p>
+                            <p class="card-text">Jenis Kelamin: {{ object.jenis_kelamin }} Golongan Darah: {{ object.golongan_darah }}</p>
+                            <p class="card-text">Alamat: {{ object.alamat }} RT: {{ object.rt }} RW: {{ object.rw }} Kecamatan: {{ object.kecamatan }}</p>
+                            <p class="card-text">Agama: {{ object.agama }} Status Perkawinan: {{ object.status_perkawinan }}</p>
+                            <p class="card-text">Pekerjaan:{{ object.pekerjaan }} Kewarganegaraan: {{ object.kewarganegaraan }}</p>
+                            <p class="card-text">Masa Berlaku: {{ object.masa_berlaku }}</p>
                           </div>
-                          <a class="btn btn-danger" href="{% url 'warga:list_ktp'%}" title="Kembali">Kembali</a>
                       </div>
                   </div>
                   <div class="col-md-12">
