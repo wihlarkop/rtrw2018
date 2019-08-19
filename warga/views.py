@@ -51,14 +51,14 @@ class KtpDetail(LoginRequiredMixin, DetailView):
 
 
 class KtpUpdate(LoginRequiredMixin,UpdateView):
-        login_url = '/akun/login'
-        form_class = KTPForm
-        model = Ktp
-        template_name = "ktp/ktp_create.html"
+    login_url = '/akun/login'
+    form_class = KTPForm
+    model = Ktp
+    template_name = "ktp/ktp_create.html"
 
-        def form_valid(self, form):
-            form.save()
-            return redirect(reverse("warga:list_ktp"))
+    def form_valid(self, form):
+        form.save()
+        return redirect(reverse("warga:list_ktp"))
 
 
 class KtpDelete(LoginRequiredMixin, DeleteView):

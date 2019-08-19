@@ -9,6 +9,7 @@ from suratpengantar.forms import SuratpengantarForm
 
 class SuratCreate(LoginRequiredMixin, CreateView):
     login_url = '/akun/login'
+
     def get(self, request, *args, **kwargs):
         form = SuratpengantarForm()
         return render(request, 'suratpengantar/surat_create.html', {'form': form})
@@ -18,7 +19,7 @@ class SuratCreate(LoginRequiredMixin, CreateView):
         print(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('suratpengantar:list_surat'))
+            return HttpResponseRedirect(reverse_lazy('suratpengantar:list_surat'))
         return render(request, 'suratpengantar/surat_create.html', {'form': form})
 
 
@@ -34,6 +35,7 @@ class SuratUpdate(LoginRequiredMixin, UpdateView):
     form_class = SuratpengantarForm
     model = Suratpengantar
     template_name = "suratpengantar/surat_create.html"
+
     def form_valid(self, form):
         form.save()
         return redirect(reverse("suratpengantar:list_surat"))

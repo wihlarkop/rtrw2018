@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+
+{% block page_title %}
+    Buat Surat Pengantar
+{% endblock page_title %}
+
+
+{% block contents %}
+    <div class="container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        {{ form.nik.label_tag }}
+                        {{ form.nik }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        {{ form.tujuan_surat.label_tag }}
+                        {{ form.tujuan_surat }}
+                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        {{ form.atas_nama.label_tag }}
+                        {{ form.atas_nama }}
+                    </div>
+                </div>
+            </div>
+            {% if user.is_authenticated %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group"></div>
+                    {{ form.is_ready.label_tag }}
+                    {{ form.is_ready }}
+                </div>
+            </div>
+            {% endif %}
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <a class="btn btn-danger" href="{% url 'index'%}" title="Kembali">Kembali</a>
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+{% endblock contents %}

@@ -35,7 +35,7 @@
                         <td>{{ kk.nomor_kk }}</a></td>
                         <td>{{ kk.nik }}</td>
                         <td>{{ kk.alamat }}</td>
-                        <td>{{ kk.rt }}</td>
+                        <td>{{ kk.get_rt_display }}</td>
                         <td>{{ kk.rw }}</td>
                         <td><a class="btn btn-outline-warning" href="{% url 'warga:update_kk' kk.id %}" title="">Update</a>
                             <a class="btn btn-outline-danger" href="{% url 'warga:delete_kk' kk.id %}" title="">Delete</a></td>

@@ -127,16 +127,3 @@ class KkForm(forms.ModelForm):
     is_kepala_keluarga = forms.BooleanField(label="Apakah Kepala Keluarga?",
                                             required=False,
                                             widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}))
-
-
-class KkktpForm(forms.ModelForm):
-    class Meta:
-        model = Ktpkk
-        fields = '__all__'
-    #
-    # nik = forms.ModelMultipleChoiceField(queryset=Ktp.objects.all(),
-    #                                      label="Pilih Nomor KTP",
-    #                                      widget=forms.CheckboxSelectMultiple())
-    # nomor_kk = forms.ModelChoiceField(queryset=Kk.objects.all(), empty_label=None)
-    # alamat = forms.CharField(label="Masukkan Alamat",
-    #                          widget=forms.Textarea(attrs={"rows": 5, "cols": 50, 'class': 'form-control'}),)

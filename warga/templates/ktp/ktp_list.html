@@ -33,7 +33,7 @@
                         <th scope="row">{{forloop.counter}}</th>
                         <td><a href="{% url 'warga:detail_ktp' ktp.pk %}">{{ ktp.nik }}</a></td>
                         <td>{{ktp.nama}}</td>
-                        <td>{{ktp.rt}}</td>
+                        <td>{{ktp.get_rt_display}}</td>
                         <td>{{ktp.rw}}</td>
                         <td><a class="btn btn-outline-warning" href="{% url 'warga:update_ktp' ktp.id %}" title="">Update</a>
                             <a class="btn btn-outline-danger" href="{% url 'warga:delete_ktp' ktp.id %}" title="">Delete</a></td>

@@ -12,13 +12,24 @@
   </button>
      <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-                 <a class="nav-link mr-sm-1" href="">HomePage</a>
+             <li class="nav-item ">
+                 <a class="nav-link mr-sm-1" href="{% url 'index' %}">HomePage</a>
              </li>
-             <li>
+             <li class="nav-item">
+                 <a class="nav-link mr-sm-1" href="{% url 'surat_user' %}">Surat Pengantar</a>
+             </li>
+             <li class="nav-item">
                  <a class="nav-link mr-sm-1" href="{% url 'akun:login' %}">Login</a>
              </li>
          </ul>
      </div>
  </nav>
+
+	<div class="container" style="margin-top:20px">
+		{% block contents %}
+
+		{% endblock contents %}
+	</div>
+
+	{% include "snippets/script.html" %}
 </body>

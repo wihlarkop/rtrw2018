@@ -12,15 +12,4 @@ class SuratpengantarForm(forms.ModelForm):
     # nik = forms.CharField(label="Masukkan NIK", widget=forms.TextInput(attrs={'class': 'form-control'}))
     tujuan_surat = forms.CharField(max_length=255, widget=forms.TextInput(attrs={'class': 'form-control'}))
     atas_nama = forms.CharField(max_length=255, required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    is_ready = forms.BooleanField(label="Status Surat Pengantar", widget=forms.CheckboxInput())
-
-class UserForm(forms.ModelForm):
-    class Meta:
-            model = Suratpengantar
-            fields = '__all__'
-
-
-    nik = forms.CharField(label="Masukkan NIK", widget=forms.TextInput(attrs={'class': 'form-control'}))
-    tujuan_surat = forms.CharField(max_length=255, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    atas_nama = forms.CharField(max_length=255, required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    is_ready = forms.BooleanField(label="Status Surat Pengantar", widget=forms.CheckboxInput())
+    is_ready = forms.BooleanField(label="Status Surat Pengantar", required=False, widget=forms.CheckboxInput())

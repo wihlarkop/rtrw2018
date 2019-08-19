@@ -11,6 +11,7 @@
             <table align="center" class="table mt-2">
                 <thead class="thead-dark">
                 <tr>
+                    <th scope="col" class="align-middle">Nomor</th>
                     <th scope="col" class="align-middle">NIK</th>
                     <th scope="col" class="align-middle">Tujuan Surat</th>
                     <th scope="col" class="align-middle">Atas Nama</th>
@@ -25,9 +26,9 @@
                         <td>{{ surat.nik }}</a></td>
                         <td>{{ surat.tujuan_surat }}</td>
                         <td>{{ surat.atas_nama }}</td>
-                        <td>{{ surat.is_ready }}</td>
-                        <td><a class="btn btn-outline-warning" href="{% url 'suratpengantar:update_surat' suratpengantar.id %}" title="">Update</a>
-                            <a class="btn btn-outline-danger" href="{% url 'suratpengantar:delete_surat' suratpengantar.id %}" title="">Delete</a></td>
+                        <td>{{ surat.is_ready|yesno:"Sudah Jadi, Belum Jadi" }}</td>
+                        <td><a class="btn btn-outline-warning" href="{% url 'suratpengantar:update_surat' surat.id %}" title="">Update</a>
+                            <a class="btn btn-outline-danger" href="{% url 'suratpengantar:delete_surat' surat.id %}" title="">Delete</a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
