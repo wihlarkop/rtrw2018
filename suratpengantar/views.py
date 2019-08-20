@@ -2,6 +2,7 @@ from django.views.generic import CreateView, ListView, DeleteView, UpdateView
 from django.shortcuts import HttpResponseRedirect, redirect, reverse, render
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
 
 from suratpengantar.models import Suratpengantar
 from suratpengantar.forms import SuratpengantarForm
@@ -19,6 +20,7 @@ class SuratCreate(LoginRequiredMixin, CreateView):
         print(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Surat Pengantar Berhasil Ditambahkan")
             return HttpResponseRedirect(reverse_lazy('suratpengantar:list_surat'))
         return render(request, 'suratpengantar/surat_create.html', {'form': form})
 

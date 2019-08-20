@@ -25,6 +25,21 @@
      </div>
  </nav>
 
+ <!--{% if messages %}-->
+  <!--<ul class="messages">-->
+    <!--{% for message in messages %}-->
+      <!--<li class="{{ message.tags }}">{{ message }}</li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+<!--{% endif %}-->
+
+ {% for message in messages %}
+  <div class="alert {{ message.tags }} alert-success" role="alert">
+      <p class="text-center">{{ message }}</p>
+  </div>
+{% endfor %}
+
+
 	<div class="container" style="margin-top:20px">
 		{% block contents %}
 

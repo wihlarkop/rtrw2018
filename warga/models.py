@@ -47,7 +47,7 @@ class Ktp(models.Model):
         ('WNA', 'Warga Negara Asing')
     )
 
-    nik = models.IntegerField(unique=True)
+    nik = models.CharField(max_length=16,unique=True)
     nama = models.CharField(max_length=100, blank=False, null=False)
     tanggal_lahir = models.DateField()
     tempat_lahir = models.CharField(max_length=15)
@@ -62,6 +62,7 @@ class Ktp(models.Model):
     pekerjaan = models.CharField(max_length=25)
     kewarganegaraan = models.CharField(max_length=3, choices=KEWARGANEGARAAN_CHOICE)
     masa_berlaku = models.CharField(max_length=15, default="Seumur Hidup", editable=False)
+
 
     def __str__(self):
         return '{} {}'.format(self.nik, self.nama)
@@ -80,7 +81,7 @@ class Kk(models.Model):
         ('9', 'RT 09'),
     )
 
-    nomor_kk = models.IntegerField(unique=True)
+    nomor_kk = models.CharField(max_length=16,unique=True)
     nik = models.ForeignKey(Ktp, on_delete=models.CASCADE, unique=True)
     alamat = models.TextField()
     rt = models.CharField(max_length=3, choices=RT_CHOICES)
@@ -90,11 +91,3 @@ class Kk(models.Model):
 
     def __str__(self):
         return '{}, {}'.format(self.nomor_kk, self.nik.nama)
-
-
-class Ktpkk(models.Model):
-    nik = models.ForeignKey(Ktp, on_delete=models.CASCADE, unique=True)
-    nomor_kk = models.ForeignKey(Kk, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return '{} {}'.format(self.nomor_kk, self.nik)

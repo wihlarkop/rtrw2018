@@ -1,5 +1,5 @@
 from django import forms
-from warga.models import Ktp, Kk, Ktpkk
+from warga.models import Ktp, Kk
 
 
 class KTPForm(forms.ModelForm):

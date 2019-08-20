@@ -5,6 +5,21 @@
 {% endblock page_title %}
 
 {% block contents %}
+
+<!--{% if messages %}-->
+  <!--<ul class="messages">-->
+    <!--{% for message in messages %}-->
+      <!--<li class="{{ message.tags }}">{{ message }}</li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+<!--{% endif %}-->
+
+{% for message in messages %}
+  <div class="alert {{ message.tags }} alert-success" role="alert">
+      <p class="text-center">{{ message }}</p>
+  </div>
+{% endfor %}
+
 <div class="row">
     <div class="col-md-12">
         <form action="{% url 'warga:list_kk' %}" method="get">

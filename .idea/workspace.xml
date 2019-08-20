@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10c4b0f5-3efd-464e-8228-e08915c99d81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/surat_user_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtrw/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rtrw/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rtrw/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rtrw/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suratpengantar/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/suratpengantar/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suratpengantar/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suratpengantar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/suratpengantar/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/suratpengantar/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/snippets/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/snippets/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warga/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/warga/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warga/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/warga/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warga/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/warga/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warga/templates/kk/kk_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/warga/templates/kk/kk_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warga/templates/kk/kk_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/warga/templates/kk/kk_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warga/templates/ktp/ktp_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/warga/templates/ktp/ktp_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warga/templates/ktp/ktp_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/warga/templates/ktp/ktp_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warga/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/warga/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warga/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/warga/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,47 +29,73 @@
     <session id="-658588859">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.435" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="173" />
-          <entry key="py" value="142" />
+          <entry key="html" value="198" />
+          <entry key="py" value="169" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="173" />
+          <entry key="HTML" value="198" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="142" />
+          <entry key="Python" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2740" />
-          <entry key="py" value="4238" />
+          <entry key="html" value="2797" />
+          <entry key="py" value="4844" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2740" />
-          <entry key="Python" value="4238" />
+          <entry key="HTML" value="2797" />
+          <entry key="Python" value="4844" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <marker date="1566313494844" expanded="true" signature="136:346" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/suratpengantar/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,7 +119,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ktp/models.py" />
-        <option value="$PROJECT_DIR$/warga/admin.py" />
         <option value="$PROJECT_DIR$/warga/templates/ktp_create.html" />
         <option value="$PROJECT_DIR$/warga/templates/ktp_list.html" />
         <option value="$PROJECT_DIR$/warga/templates/ktp_update.html" />
@@ -107,40 +131,41 @@
         <option value="$PROJECT_DIR$/warga/templates/kk/kk_update.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/warga/templates/kk/kk_detail.html" />
-        <option value="$PROJECT_DIR$/warga/templates/kk/kk_create.html" />
         <option value="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_update.html" />
         <option value="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_confirm_delete.html" />
-        <option value="$PROJECT_DIR$/suratpengantar/models.py" />
         <option value="$PROJECT_DIR$/templates/snippets/styles.html" />
         <option value="$PROJECT_DIR$/templates/snippets/script.html" />
         <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_confirm_delete.html" />
         <option value="$PROJECT_DIR$/akun/models.py" />
-        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_create.html" />
         <option value="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_create.html" />
         <option value="$PROJECT_DIR$/rtrw/settings.py" />
         <option value="$PROJECT_DIR$/akun/urls.py" />
         <option value="$PROJECT_DIR$/suratpengantar/templates/index.html" />
         <option value="$PROJECT_DIR$/akun/templates/logout.html" />
         <option value="$PROJECT_DIR$/akun/templates/login.html" />
-        <option value="$PROJECT_DIR$/warga/models.py" />
         <option value="$PROJECT_DIR$/akun/views.py" />
         <option value="$PROJECT_DIR$/suratpengantar/urls.py" />
         <option value="$PROJECT_DIR$/warga/urls.py" />
         <option value="$PROJECT_DIR$/rtrw/urls.py" />
         <option value="$PROJECT_DIR$/templates/surat_create.html" />
+        <option value="$PROJECT_DIR$/suratpengantar/admin.py" />
+        <option value="$PROJECT_DIR$/templates/surat_user_create.html" />
+        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html" />
+        <option value="$PROJECT_DIR$/warga/admin.py" />
+        <option value="$PROJECT_DIR$/suratpengantar/forms.py" />
+        <option value="$PROJECT_DIR$/warga/forms.py" />
+        <option value="$PROJECT_DIR$/suratpengantar/models.py" />
+        <option value="$PROJECT_DIR$/warga/models.py" />
+        <option value="$PROJECT_DIR$/templates/snippets/navbar.html" />
         <option value="$PROJECT_DIR$/rtrw/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/suratpengantar/admin.py" />
-        <option value="$PROJECT_DIR$/warga/forms.py" />
-        <option value="$PROJECT_DIR$/suratpengantar/forms.py" />
-        <option value="$PROJECT_DIR$/templates/surat_user_create.html" />
-        <option value="$PROJECT_DIR$/suratpengantar/views.py" />
-        <option value="$PROJECT_DIR$/warga/views.py" />
-        <option value="$PROJECT_DIR$/templates/snippets/navbar.html" />
-        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html" />
         <option value="$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html" />
-        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_list.html" />
+        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_create.html" />
         <option value="$PROJECT_DIR$/warga/templates/kk/kk_list.html" />
+        <option value="$PROJECT_DIR$/warga/templates/kk/kk_create.html" />
+        <option value="$PROJECT_DIR$/warga/templates/ktp/ktp_list.html" />
+        <option value="$PROJECT_DIR$/warga/views.py" />
+        <option value="$PROJECT_DIR$/suratpengantar/views.py" />
       </list>
     </option>
   </component>
@@ -209,27 +234,20 @@
             <path>
               <item name="rtrw" type="b2602c69:ProjectViewProjectNode" />
               <item name="rtrw" type="462c0819:PsiDirectoryNode" />
-              <item name="warga" type="462c0819:PsiDirectoryNode" />
+              <item name="suratpengantar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rtrw" type="b2602c69:ProjectViewProjectNode" />
               <item name="rtrw" type="462c0819:PsiDirectoryNode" />
-              <item name="warga" type="462c0819:PsiDirectoryNode" />
+              <item name="suratpengantar" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rtrw" type="b2602c69:ProjectViewProjectNode" />
               <item name="rtrw" type="462c0819:PsiDirectoryNode" />
-              <item name="warga" type="462c0819:PsiDirectoryNode" />
+              <item name="suratpengantar" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="kk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtrw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtrw" type="462c0819:PsiDirectoryNode" />
-              <item name="warga" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ktp" type="462c0819:PsiDirectoryNode" />
+              <item name="suratpengantar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,7 +324,7 @@
   <component name="ToolWindowManager">
     <frame x="19" y="19" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2830482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28771386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -375,13 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warga/templates/kk/kk_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="39" column="26" lean-forward="true" selection-end-line="57" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/snippets/styles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -403,22 +414,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rtrw/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/akun/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suratpengantar/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -427,24 +428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="109" column="81" lean-forward="true" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/akun/templates/logout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warga/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
@@ -476,9 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,55 +473,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rtrw/views.py">
+    <entry file="file://$PROJECT_DIR$/suratpengantar/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/warga/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="239">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warga/admin.py">
+    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="34" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/suratpengantar/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1566231615575" expanded="true" signature="118:196" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warga/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suratpengantar/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warga/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <caret line="103" column="16" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/warga/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/snippets/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rtrw/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/suratpengantar/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
+        <state relative-caret-position="170">
+          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -548,92 +576,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suratpengantar/urls.py">
+    <entry file="file://$PROJECT_DIR$/rtrw/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="188">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warga/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warga/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-            <marker date="1566232219489" expanded="true" signature="368:369" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="35" selection-start-line="35" selection-end-line="39" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/snippets/navbar.html">
+    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suratpengantar/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warga/templates/kk/kk_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="222">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warga/templates/kk/kk_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warga/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+            <marker date="1566314070962" expanded="true" signature="466:467" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warga/templates/ktp/ktp_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suratpengantar/templates/suratpengantar/surat_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1566313494844" expanded="true" signature="136:346" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suratpengantar/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

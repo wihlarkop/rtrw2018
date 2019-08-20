@@ -1,5 +1,5 @@
 from django.contrib import admin
-from warga.models import Ktp, Kk, Ktpkk
+from warga.models import Ktp, Kk
 
 
 class KtpAdmin(admin.ModelAdmin):
@@ -10,10 +10,5 @@ class KkAdmin(admin.ModelAdmin):
     model = Kk
 
 
-class KtpkkAdmin(admin.ModelAdmin):
-    model = Ktpkk
-
-
 admin.site.register(Ktp, KtpAdmin)
 admin.site.register(Kk, KkAdmin)
-admin.site.register(Ktpkk, KtpkkAdmin)

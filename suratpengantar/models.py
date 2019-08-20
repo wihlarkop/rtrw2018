@@ -8,5 +8,6 @@ class Suratpengantar(models.Model):
     atas_nama = models.CharField(max_length=255, null=True)
     is_ready = models.BooleanField(default=False)
 
+
     def __str__(self):
         return '{} {}'.format(self.nik, self.tujuan_surat)
