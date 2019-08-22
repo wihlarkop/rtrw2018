@@ -18,7 +18,7 @@ class KtpCreate(LoginRequiredMixin, CreateView):
         return render(request, 'ktp/ktp_create.html', {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = KTPForm(request.POST)
+        form = KTPForm(request.POST, request.FILES)
         print(request.POST)
         if form.is_valid():
             form.save()
@@ -52,7 +52,6 @@ class KtpDetail(LoginRequiredMixin, DetailView):
     login_url = '/akun/login'
     model = Ktp
     template_name = "ktp/ktp_detail.html"
-    context_object_name = 'ktp_detail'
 
 
 class KtpUpdate(LoginRequiredMixin,UpdateView):
@@ -83,8 +82,8 @@ class KkCreate(LoginRequiredMixin, CreateView):
         return render(request, 'kk/kk_create.html', {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = KkForm(request.POST)
-        print(request.POST)
+        form = KkForm(request.POST, request.FILES)
+        print(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, "Nomor KK Berhasil Ditambahkan")
@@ -123,8 +122,13 @@ class KkUpdate(LoginRequiredMixin,UpdateView):
         return redirect(reverse("warga:list_kk"))
 
 
-class KkDelete(LoginRequiredMixin,DeleteView):
+class KkDelete(LoginRequiredMixin, DeleteView):
     login_url = '/akun/login'
     model = Kk
     template_name = "kk/kk_confirm_delete.html"
     success_url = reverse_lazy("warga:list_kk")
+
+class KkDetail(LoginRequiredMixin, DetailView):
+    login_url = '/akun/login'
+    model = Kk
+    template_name = "kk/kk_detail.html"

@@ -62,6 +62,9 @@ class Ktp(models.Model):
     pekerjaan = models.CharField(max_length=25)
     kewarganegaraan = models.CharField(max_length=3, choices=KEWARGANEGARAAN_CHOICE)
     masa_berlaku = models.CharField(max_length=15, default="Seumur Hidup", editable=False)
+    scan_ktp = models.ImageField(blank=True, null=True,
+                                 upload_to='scan_ktp/',
+                                 default='/noimage.png')
 
 
     def __str__(self):
@@ -86,6 +89,9 @@ class Kk(models.Model):
     alamat = models.TextField()
     rt = models.CharField(max_length=3, choices=RT_CHOICES)
     rw = models.CharField(max_length=7, default="RW 016")
+    scan_kk = models.ImageField(blank=True, null=True,
+                                 upload_to='scan_kk/',
+                                 default='/noimage.png')
     is_kepala_keluarga = models.BooleanField(default=True)
 
 

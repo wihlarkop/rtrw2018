@@ -22,7 +22,7 @@
 {% endfor %}
 
     <div class="container">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="row">
                 <div class="col-md-12">
@@ -116,6 +116,12 @@
                 <div class="col-md-12">
                     {{ form.masa_berlaku.label_tag }}
                     {{ form.masa_berlaku }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form.scan_ktp.label_tag }}
+                    {{ form.scan_ktp }}
                 </div>
             </div>
             <br>

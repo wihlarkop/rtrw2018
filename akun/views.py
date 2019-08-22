@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect, reverse
+from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login, logout
-from rtrw.urls import HomePageView
+
 def loginview(request):
     user = None
     if request.method == "POST":
@@ -15,8 +16,8 @@ def loginview(request):
             return redirect('warga:list_ktp')
         else:
             return redirect('login')
-
     return render(request, 'login.html')
+
 
 def logoutView(request):
     if request.method == "POST":

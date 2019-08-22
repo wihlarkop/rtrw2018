@@ -6,8 +6,7 @@
 
 {% block contents %}
     <div class="row">
-        <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
                     <div class="card-header">NIK: {{ object.nik }}</div>
                     <div class="card-body">
@@ -26,7 +25,9 @@
                     <a class="btn btn-danger" href="{% url 'warga:list_ktp'%}" title="Kembali">Kembali</a>
                     </div>
             </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <img src="{{ object.scan_ktp.url }}" class="img-fluid" alt="{{ object.nik }}">
+        </div>
     </div>
 
 {% endblock contents %}

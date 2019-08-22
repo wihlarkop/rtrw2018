@@ -37,7 +37,7 @@
                 {% for surat in surat_list %}
                     <tr>
                         <th scope="row">{{forloop.counter}}</th>
-                        <td>{{ surat.nik }}</a></td>
+                        <td><a href="{% url 'suratpengantar:detail_surat' surat.pk %}">{{ surat.nik }}</a></td>
                         <td>{{ surat.tujuan_surat }}</td>
                         <td>{{ surat.atas_nama }}</td>
                         <td>{{ surat.is_ready|yesno:"Sudah Jadi, Belum Jadi" }}</td>

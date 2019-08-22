@@ -1,6 +1,6 @@
 from django.urls import path
 from warga.views import (KtpCreate, KtpList, KtpDetail, KtpDelete, KtpUpdate,
-                         KkCreate, KkList, KkDelete, KkUpdate,)
+                         KkCreate, KkList, KkDelete, KkUpdate, KkDetail)
 
 app_name = 'warga'
 
@@ -18,5 +18,5 @@ urlpatterns = [
     path('kk/create/', KkCreate.as_view(), name='create_kk'),
     path('kk/update/<pk>', KkUpdate.as_view(), name='update_kk'),
     path('kk/delete/<pk>', KkDelete.as_view(), name='delete_kk'),
-    # path('kk/detail/<pk>', KkDetail.as_view(), name='detail_kk'),
+    path('kk/detail/<pk>', KkDetail.as_view(), name='detail_kk'),
 ]

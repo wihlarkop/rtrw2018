@@ -8,7 +8,7 @@
 {% block contents %}
     <h1>Tambah Surat Pengantar</h1>
     <div class="container">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="row">
                 <div class="col-md-12">
@@ -30,6 +30,13 @@
                         {{ form.atas_nama.label_tag }}
                         {{ form.atas_nama }}
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group"></div>
+                    {{ form.scan_surat.label_tag }}
+                    {{ form.scan_surat }}
                 </div>
             </div>
             <div class="row">

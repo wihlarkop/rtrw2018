@@ -47,7 +47,7 @@
                 {% for kk in kk_list %}
                     <tr>
                         <th scope="row">{{forloop.counter}}</th>
-                        <td>{{ kk.nomor_kk }}</a></td>
+                        <td><a href="{% url 'warga:detail_kk' kk.pk %}">{{ kk.nomor_kk }}</a></td>
                         <td>{{ kk.nik }}</td>
                         <td>{{ kk.alamat }}</td>
                         <td>{{ kk.get_rt_display }}</td>

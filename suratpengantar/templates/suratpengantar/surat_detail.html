@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Detail Surat Pengantar
+{% endblock page_title %}
+
+{% block contents %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="col-md-4 px-0" >
+                    <img src="{{ object.scan_surat.url }}" class="img-fluid" alt="{{ object.nik }}">
+                </div>
+                <a class="btn btn-danger" href="{% url 'suratpengantar:list_surat'%}" title="Kembali">Kembali</a>
+            </div>
+        </div>
+    </div>
+{% endblock contents %}

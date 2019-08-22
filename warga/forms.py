@@ -91,6 +91,8 @@ class KTPForm(forms.ModelForm):
                                    initial="Seumur Hidup",
                                    disabled=True,
                                    widget=forms.TextInput(attrs={'class': 'form-control'}))
+    scan_ktp = forms.ImageField(label='Upload Scan KTP',
+                                widget=forms.FileInput(attrs={'class': 'form-control'}))
 
 
 class KkForm(forms.ModelForm):
@@ -124,6 +126,8 @@ class KkForm(forms.ModelForm):
                          disabled=True,
                          initial='RW 016',
                          widget=forms.TextInput(attrs={'class': 'form-control'}))
+    scan_kk = forms.ImageField(label='Upload Scan KK',
+                               widget=forms.FileInput(attrs={'class': 'form-control'}))
     is_kepala_keluarga = forms.BooleanField(label="Apakah Kepala Keluarga?",
                                             required=False,
                                             widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}))
