@@ -1,7 +1,7 @@
-Skripsi Sistem Manajemen Administrasi Penduduk Pada RW 016 Kelurahan Tomang Berbasis Web
+Population Administration Management System in RW 016
 
-pada sistem ini terdapat beberapa menu yaitu:
+This System Had A Few Menu
 
-Menu KTP
-Menu KK
-Menu Surat Pengantar
+Menu KTP(ID Card)
+Menu KK(Family Card)
+Menu Surat Pengantar(Cover Letter For People)
